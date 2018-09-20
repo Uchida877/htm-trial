@@ -1,0 +1,2 @@
+modelParams|clParams|alpha,modelParams|sensorParams|encoders|sine:n,modelParams|spParams|synPermInactiveDec,modelParams|tmParams|activationThreshold,modelParams|tmParams|minThreshold,modelParams|tmParams|pamLength
+0.1,521,0.005285000000000001,16,12,5

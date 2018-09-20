@@ -78,12 +78,12 @@ def runHotgym(numRecords):
         return results, anomalyScore, anomalyProbability, rawData
 
 def saveCsv(outputFileName, data):
-    file_handler = open(outputFileName + '.csv', 'w')
+    file_handler = open("predicted/" + outputFileName + '.csv', 'w')
     writer = csv.writer(file_handler)
     #headers = ["seconds", "data", "data"]
     #types = ["float", "float", "float"]
     #flags = ["", "", ""]
-    headers = ["seconds", outputFileName, "anomalyScore", "anomalyLikelihood"]
+    headers = ["seconds", "predicted", "anomalyScore", "anomalyLikelihood"]
     types = ["float", "float", "int", "float"]
     flags = ["", "", "", ""]
     writer.writerow(headers)

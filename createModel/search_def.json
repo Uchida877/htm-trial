@@ -1,0 +1,31 @@
+{
+    "inferenceType": "TemporalAnomaly",
+    "includedFields": [
+        {
+            "maxValue": 1,
+            "fieldName": "sine",
+            "fieldType": "float",
+            "minValue": -1
+        }
+    ],
+    "inferenceArgs": {
+        "predictionSteps": [
+            1
+        ],
+        "predictedField": "sine"
+    },
+    "streamDef": {
+        "info": "sine",
+        "version": 1,
+        "streams": [
+            {
+                "info": "sine.csv",
+                "source": "file://sine.csv",
+                "columns": [
+                    "*"
+                ]
+            }
+        ]
+    },
+    "swarmSize": "medium"
+}
